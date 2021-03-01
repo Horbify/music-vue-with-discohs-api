@@ -43,7 +43,7 @@
           </h4>
           <span><i class="fas fa-fire"></i></span>
         </div>
-        <div id="chips" class="chips">
+        <!-- <div id="chips" class="chips">
           <span
             class="badge badge-pill badge-primary shadow chip-item"
             id="chip-item"
@@ -60,24 +60,8 @@
               class="icon ion-close-round"
               style="font-size: 13px; font-weight: 100"
             ></i></span
-          ><span
-            class="badge badge-pill badge-primary shadow chip-item"
-            id="chip-item-2"
-            style="font-size: 15px; background-color: #383a3d"
-            >Hello&nbsp;<i
-              class="icon ion-close-round"
-              style="font-size: 13px; font-weight: 100"
-            ></i></span
-          ><span
-            class="badge badge-pill badge-primary shadow chip-item"
-            id="chip-item-1"
-            style="font-size: 15px; background-color: #383a3d"
-            >Hello&nbsp;<i
-              class="icon ion-close-round"
-              style="font-size: 13px; font-weight: 100"
-            ></i
-          ></span>
-        </div>
+          >
+        </div> -->
         <div id="category-item" class="category-item" v-for="(item, i) in result" :key="i">
           <div class="card item-card">
             <div
@@ -116,10 +100,13 @@
                 </div>
                 <div class="col-2">
                   <div class="text-center" style="padding-top: 50%"></div>
-                  <i
+                  <a :href="item.url">
+                                    <i
                     class="fas fa-location-arrow"
                     style="color: #ffffff; font-size: 20px; padding-left: 16px"
                   ></i>
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -137,7 +124,7 @@
           </h4>
           <span><i class="fas fa-fire"></i></span>
         </div>
-        <div id="chips" class="chips">
+        <!-- <div id="chips" class="chips">
           <span
             class="badge badge-pill badge-primary shadow chip-item"
             id="chip-item"
@@ -154,24 +141,8 @@
               class="icon ion-close-round"
               style="font-size: 13px; font-weight: 100"
             ></i></span
-          ><span
-            class="badge badge-pill badge-primary shadow chip-item"
-            id="chip-item-2"
-            style="font-size: 15px; background-color: #383a3d"
-            >Hello&nbsp;<i
-              class="icon ion-close-round"
-              style="font-size: 13px; font-weight: 100"
-            ></i></span
-          ><span
-            class="badge badge-pill badge-primary shadow chip-item"
-            id="chip-item-1"
-            style="font-size: 15px; background-color: #383a3d"
-            >Hello&nbsp;<i
-              class="icon ion-close-round"
-              style="font-size: 13px; font-weight: 100"
-            ></i
-          ></span>
-        </div>
+          >
+        </div> -->
         <div id="category-item" class="category-item" v-for="(item, i) in generes" :key="i">
           <div class="card item-card">
             <div
@@ -247,7 +218,7 @@ export default {
         useQueryString: true,
       }
     });
-    let ok = result.data.global.genres.slice(0, 5)
+    let ok = result.data.global.genres.slice(0, 4)
     this.generes = ok
 
     this.result = data.tracks
