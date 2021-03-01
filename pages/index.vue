@@ -331,7 +331,9 @@ chip-item {
   margin-right: 10px;
 }
 
-
+.card-body{
+    padding: 0px;
+}
 
 .card.item-card {
   background-color: #383a3d;
