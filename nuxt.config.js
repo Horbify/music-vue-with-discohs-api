@@ -67,16 +67,6 @@ export default {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css?family=Aclonica"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "/input.css"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          "/styles.css"
       }
     ]
   },
@@ -95,10 +85,6 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: [
-    {
-      path: "~/components/",
-      prefix: "main"
-    },
   ],
   /*
    ** Nuxt.js dev-modules
