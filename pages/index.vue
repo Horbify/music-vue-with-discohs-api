@@ -287,13 +287,6 @@ export default {
   padding: 15px;
 }
 
-#mobile-body {
-  /*height: 100vh;*/
-}
-
-#header {
-}
-
 #mobile-header {
   height: 10vh;
 }
@@ -338,8 +331,7 @@ chip-item {
   margin-right: 10px;
 }
 
-.card.item-card {
-}
+
 
 .card.item-card {
   background-color: #383a3d;
@@ -354,8 +346,6 @@ chip-item {
   padding: 10px;
 }
 
-.card-subtitle-artist {
-}
 
 .category-item {
   margin-top: 10px;
