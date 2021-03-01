@@ -67,6 +67,16 @@ export default {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css?family=Aclonica"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "/input.css"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "/styles.css"
       }
     ]
   },

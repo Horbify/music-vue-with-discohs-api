@@ -1,0 +1,83 @@
+#body {
+  background-color: #211f1f;
+  padding: 15px;
+}
+
+#mobile-body {
+  /*height: 100vh;*/
+}
+
+#header {
+}
+
+#mobile-header {
+  height: 10vh;
+}
+
+#category {
+  display: flex;
+}
+
+#category-header {
+  flex-grow: 1;
+}
+
+.fas.fa-fire {
+  color: #E25822;
+  font-size: 25px;
+}
+
+#chips {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+chip-item {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#chips::-webkit-scrollbar {
+  display: hidden;
+}
+
+.chips::-webkit-scrollbar {
+  display: grid;
+}
+
+.badge.badge-primary {
+  padding-right: 6px;
+}
+
+.chip-item {
+  margin-right: 10px;
+}
+
+.card.item-card {
+}
+
+.card.item-card {
+  background-color: #383a3d;
+  height: 80px;
+}
+
+.col {
+  max-height: 80px;
+}
+
+.col-3.card-image {
+  padding: 10px;
+}
+
+.card-subtitle-artist {
+}
+
+.category-item {
+  margin-top: 10px;
+}
+
+.section {
+  margin-top: 20px;
+}
+
