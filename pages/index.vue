@@ -9,7 +9,7 @@
                 <div class="col-md-10 offset-md-1">
                     <div class="card m-auto" style="max-width:850px">
                         <div class="card-body" style="padding: 0px;">
-                            <form class="d-flex align-items-center"><i class="fas fa-search d-none d-sm-block h4 text-body m-0"></i><input class="form-control flex-shrink-1 form-control-borderless" type="search" placeholder="Search for songs..." name="searchbar" required=""><button class="btn btn-success"
+                            <form @submit.prevent="submit" class="d-flex align-items-center"><i class="fas fa-search d-none d-sm-block h4 text-body m-0"></i><input class="form-control flex-shrink-1 form-control-borderless" type="search" placeholder="Search for songs..." name="searchbar" required=""><button class="btn btn-success"
                                     type="submit">Search</button></form>
                         </div>
                     </div>
@@ -133,7 +133,16 @@
 
 <script>
 export default {
-
+methods: {
+  async submit(){
+    let {data} = this.$axios.get("https://api.discogs.com/database/search?artist=Eminem", {
+      headers: {
+        'Authorization': "Discogs key=pVgcPLxEMfaZLZrnrFzK, secret=QsPkJunoMtkOBcIfEsAWYsvqbVsDBKAB"
+      }
+    })
+    console.log(data)
+  }
+}
 }
 </script>
 
